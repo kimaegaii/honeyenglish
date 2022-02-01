@@ -20,6 +20,11 @@ Route::get('/test', function () {
     return view('test');
 });
 
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
