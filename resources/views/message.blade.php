@@ -31,7 +31,7 @@
 
           
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+            <div class="mx-auto sm:px-6 lg:px-8 w-max">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                     <img class="w-20 h-20" src="{{ URL('images/logo.png') }}" alt="">
                     <div class="flex-1">
@@ -40,31 +40,32 @@
                     </div>
                 </div>
 
-                <div class="flex items-center justify-center">
-                    <div class="bg-white w-1/3 mt-10 rounded-lg">
-                      <div class="flex items-center justify-center pt-10 flex-col">
-                        <img src="https://i.pinimg.com/originals/a8/bc/90/a8bc90ea196737604770aaf9c2d56a51.jpg" class="rounded-full w-48">
-                        <button class="w-full mt-3 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                            <a href="{{ route('message') }}">Send Message</a>
-                        </button>
-                        <h1 class="text-gray-800 font-semibold text-xl mt-5">Donnie Atwood</h1>
-                        <h1 class="text-gray-500 text-sm">Seoul, South Korea</h1>
-                          <h1 class="text-gray-500 text-sm p-4 text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          </h1>
-                      </div>
-                      <div class="flex justify-between p-4">
-                        <div>
-                          <h1 class="text-xs uppercase text-gray-500">Membership</h1>
-                          <h1 class="text-xs text-yellow-500">Basic</h1>
-                        </div>
-                        <div>
-                          <button class="text-xs text-green-300 border-2 py-1 px-2 border-green-300">Get Bee-Certified</button>
-                        </div>
-                      </div>
+                {{-- send message here --}}
+                {{-- <div class="flex-0 justify-center">
+                    <img src="https://i.pinimg.com/originals/a8/bc/90/a8bc90ea196737604770aaf9c2d56a51.jpg" class="rounded-full w-48">
+                        <p class="text-xl pb-3">Bee all you can bee.</p>
                     </div>
-                  
-                  </div>
+                </div> --}}
+                
+                <div class="flex flex-col justify-center items-center bg-gray-100 mt-11">
+
+                    <img  class="rounded-full w-48" src="https://i.pinimg.com/originals/a8/bc/90/a8bc90ea196737604770aaf9c2d56a51.jpg">
+                    <p class="text-xl pb-3 text-center">Donnie Atwood</p>
+                    
+                    <form action="#" class="sm:w-full lg:w-[600px]">                       
+                      <div class="p-3">
+                        <input class="block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-light-blue-400 rounded-md w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300" type="text" placeholder="Subject" required>
+                      </div>
+                      
+                      <div class="p-3">
+                        <textarea class="resize-none border rounded-md block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-light-blue-400 rounded-md w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300 h-56" placeholder="Message" required></textarea>
+                      </div>
+                      <div class="p-3 pt-4">
+                      <button class="w-full bg-gray-700 hover:bg-gray-900 text-white font-bold py-3 px-4 rounded text-2xl">
+                      Send
+                      </button>
+                    </form>
+                </div>
 
                 <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                     <div class="text-center text-sm text-gray-500 sm:text-left">

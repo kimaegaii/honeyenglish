@@ -37,4 +37,13 @@ Route::get('/messages', function () {
     return view('messages');
 })->middleware(['auth'])->name('messages');
 
+Route::get('/message', function(){
+    return view('message');
+})->name('message');
+
+Route::get('/readMessage', function(){
+    return view('readMessage');
+})->name('readMessage');
+
+
 require __DIR__.'/auth.php';

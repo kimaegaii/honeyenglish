@@ -64,7 +64,7 @@
                                             </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm text-gray-900">Hey there.. I wanted to ask about...</div>
+                                            <div class="text-sm text-gray-900"><a href="{{ route('readMessage') }}">Hey there.. I wanted to ask about...</a></div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 10/10/2022 7:30 am
