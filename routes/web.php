@@ -39,11 +39,11 @@ Route::get('/messages', function () {
 
 Route::get('/message', function(){
     return view('message');
-})->name('message');
+})->middleware(['auth'])->name('message');
 
 Route::get('/readMessage', function(){
     return view('readMessage');
-})->name('readMessage');
+})->middleware(['auth'])->name('readMessage');
 
 
 require __DIR__.'/auth.php';
