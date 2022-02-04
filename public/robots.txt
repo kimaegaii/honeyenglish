@@ -1,2 +1,10 @@
 User-agent: *
-Disallow:
+Disallow: /.vs
+Disallow: /app
+Disallow: /bootstrap
+Disallow: /config
+Disallow: /database
+Disallow: /resources
+Disallow: /routes
+Disallow: /storage
+Disallow: /tests
